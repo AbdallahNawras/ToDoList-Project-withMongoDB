@@ -22,3 +22,7 @@ Technical Requirements
  EJS: EJS will be used as the templating engine to generate dynamic HTML based on the application's state.
 
 MongoDB: Will be the database for this project. Where users can save the tasks.
+
+To run the project:
+npm install
+node index.js
