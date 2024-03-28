@@ -1,0 +1,13 @@
+
+name: Keep Alive
+
+on:
+  schedule:
+    - cron: '0 0 */6 * *' # Runs at 00:00 (midnight) every 6 days
+
+jobs:
+  keep_alive_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send request to keep the service alive
+        run: curl -s https://to-do-list-nbc8.onrender.com
